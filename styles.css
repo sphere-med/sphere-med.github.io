@@ -427,3 +427,53 @@ p { margin-top: 0px; }
   .team-grid { grid-template-columns: 1fr; }
   .mode-tab strong { font-size: 0.75rem; }
 }
+
+/* Showcase additions are scoped to preserve the archived page's layout. */
+.project-showcase .project-pillars { margin-top: 42px; }
+
+.project-showcase .project-status { margin-top: 44px; }
+
+.project-showcase .vision-section { background: var(--paper); }
+
+.project-showcase .vision-section .section-heading { align-items: center; }
+
+.project-showcase .vision-intro { max-width: 460px; font-size: 1rem; }
+
+.project-showcase .vision-statement { color: var(--ink); margin: 0; }
+
+.project-showcase .vision-statement strong { font-weight: 650; }
+
+.project-showcase .vision-definition { margin-top: 26px; }
+
+.project-showcase .vision-label { font-weight: 650; color: var(--teal); margin: 0 0 8px; }
+
+.project-showcase .vision-definition > p:last-child { color: var(--muted); margin-bottom: 0; }
+
+.project-showcase .vision-section .learning-goal { margin-top: 28px; }
+
+.project-showcase .audience-intro { color: rgb(183, 204, 198); max-width: 410px; margin: 25px 0 0; }
+
+.project-showcase .contact-section { background: rgb(237, 243, 240); color: var(--ink); }
+
+.project-showcase .contact-inner .eyebrow,
+.project-showcase .contact-inner h2 em { color: var(--teal); }
+
+.project-showcase .contact-inner > div > p:not(.eyebrow),
+.project-showcase .contact-email { color: var(--muted); }
+
+.project-showcase .contact-aside { border-color: rgb(204, 220, 213); }
+
+.project-showcase .contact-divider { background: rgb(204, 220, 213); }
+
+@media (max-width: 900px) {
+  .project-showcase .nav { gap: 20px; }
+  .project-showcase .nav nav { gap: 22px; }
+}
+
+@media (max-width: 760px) {
+  .project-showcase .nav { height: auto; min-height: 76px; padding-top: 17px; flex-wrap: wrap; gap: 12px; }
+  .project-showcase .nav nav { display: flex; order: 3; width: 100%; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding-block: 3px; font-size: 0.875rem; }
+  .project-showcase .nav nav a { padding-block: 10px; white-space: nowrap; }
+  .project-showcase main > section[id] { scroll-margin-top: 40px; }
+  .project-showcase .project-pillars { margin-top: 30px; }
+}

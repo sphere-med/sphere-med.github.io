@@ -1,6 +1,8 @@
 # SPHERE
 
-Static Italian website for SPHERE, based on the supplied saved-page reference.
+Static Italian showcase website for SPHERE, retaining the supplied visual identity.
+The page presents the project through four sections: Progetto, Team, Visione,
+and Casi d’uso. It does not host a simulator or individual clinical cases.
 
 ## Preview
 
@@ -17,13 +19,15 @@ No build step is required.
 
 ## Content and assets
 
-- `index.html`: page content, contact links, and all three training-mode panels.
+- `index.html`: the four showcase sections, contact links, and three explanatory
+  tabs about the educational approach within Visione.
+- `sphere_index_old.html`: the previous page, preserved as a reference.
 - `styles.css`: responsive layout and typography.
 - `script.js`: accessible training-mode tabs, including keyboard navigation.
 - `assets/sphere-hero.png`: hero image extracted from the supplied archive.
 
-The two inactive training-mode panels were absent from the saved archive and
-were recreated from the described method. Review that wording before publishing.
+The new layout rules are scoped to `project-showcase` so the archived page
+retains its original appearance and interactions.
 The contact address `sphere@gmail.com` is retained from the reference; confirm
 it is the intended inbox. Contact buttons open the visitor's email application.
 Fonts load from Google Fonts with local system-font fallbacks.
